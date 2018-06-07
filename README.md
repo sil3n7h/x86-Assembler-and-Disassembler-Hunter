@@ -2,7 +2,7 @@
 Search a directory of binaries and dlls for a specific assembly code or hex string (Intel syntax).
 
 __Usage:__\
-__./aad_hunter.sh__ [-h] [-d directory] [-a assembly_command] [-b hex_value]\
+__./aad_hunter.sh__ [-h] [-d directory] [-a assembly_command] [-b hex_value]
 
 __Where:__\
     -h  show this help text\
@@ -15,12 +15,12 @@ __./aad_hunter.sh__ -a "CALL ESP" -d /files/\
 Searching for the following hex code:  ff d4\
 in_mp3.dll\
  202d960:	e8 ff d4 ff ff       	call   0x202ae64\
-winamp.exe\
+winamp.exe
 
-__Or:__\
+__Or:__
 
 __./aad_hunter.sh__ -b "ffd4" -d /files/\
 Searching for the following hex code:  ffd4\
 in_mp3.dll\
  202d960:	e8 ff d4 ff ff       	call   0x202ae64\
-winamp.exe\
+winamp.exe
