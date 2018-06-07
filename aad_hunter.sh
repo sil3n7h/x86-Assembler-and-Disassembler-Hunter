@@ -50,10 +50,7 @@ then
 	EOF
 	gcc tmp.c -masm=intel -o tmp.exe
 	MOD_ASSEMBLY="$(echo $ASSEMBLY | sed -e 's/[[]/\\[/g' | sed -e 's/[]]/\\]/g' | sed -e 's/ /[ ]*.*/g')"
-	#MOD_ASSEMBLY="$(echo $MOD_ASSEMBLY | sed -e 's/[]]/\\]/g')"
-	#MOD_ASSEMBLY="$(echo $MOD_ASSEMBLY | sed -e 's/ /[ ]*.*/g')"
 	#echo $MOD_ASSEMBLY
-	#exit 0
 
 	HEX_OUTPUT="$(objdump -S tmp.exe -M intel | grep -i -e "$MOD_ASSEMBLY" | cut -d$'\t' -f2 | sed 's/  //g')"
 	if [ ! -z "$HEX_OUTPUT" ]
