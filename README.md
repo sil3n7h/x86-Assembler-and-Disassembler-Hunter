@@ -11,18 +11,18 @@ __Where:__\
     -b  hex to search for ex: \"ff d4\""
 
 __Example (search for JMP ESP in WinAmp files winamp.exe and in_mp3.dll):__\
-...
+```
 __./aad_hunter.sh__ -a "CALL ESP" -d /files/\
 Searching for the following hex code:  ff d4\
 in_mp3.dll\
  202d960:	e8 ff d4 ff ff       	call   0x202ae64\
 winamp.exe
-...
+```
 __Or:__
-...
+```
 __./aad_hunter.sh__ -b "ffd4" -d /files/\
 Searching for the following hex code:  ffd4\
 in_mp3.dll\
  202d960:	e8 ff d4 ff ff       	call   0x202ae64\
 winamp.exe
-...
+```
