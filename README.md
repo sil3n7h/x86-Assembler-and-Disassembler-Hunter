@@ -10,7 +10,7 @@ __Where:__\
     -a  assembly to search for ex: \"call esp\"\
     -b  hex to search for ex: \"ff d4\""
 
-__Example (search for JMP ESP in WinAmp files winamp.exe and in_mp3.dll):__\
+__Example (search for JMP ESP in Winamp files winamp.exe and in_mp3.dll):__\
 ```
 __./aad_hunter.sh__ -a "CALL ESP" -d /files/
 Searching for the following hex code:  ff d4
